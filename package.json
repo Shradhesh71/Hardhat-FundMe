@@ -1,0 +1,48 @@
+{
+  "name": "hardhat-fundme-fcc",
+  "author": "Shradesh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "@chainlink/contracts": "^0.8.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+    "@nomiclabs/hardhat-etherscan": "^3.1.8",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "@typechain/ethers-v5": "^11.1.2",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.5",
+    "chai": "^5.0.0",
+    "dotenv": "^16.3.2",
+    "ethereum-waffle": "^4.0.10",
+    "ethers": "5.7.0",
+    "hardhat": "^2.19.4",
+    "hardhat-deploy": "^0.11.45",
+    "hardhat-gas-reporter": "^1.0.9",
+    "prettier-plugin-solidity": "^1.3.1",
+    "solidity-coverage": "^0.8.5",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.3",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "solhint": "^4.1.1"
+  },
+  "scripts":{
+    "test": "hardhat test",
+    "test-staging": "hardhat test --network sepolia",
+    "lint": "solhint 'contracts/*.sol'",
+    "lint:fix": "solhint 'contracts/**/*.sol' --fix",
+    "format": "prettier --write .",
+    "coverage": "hardhat coverage",
+    "typechain": "yarn hardhat typechain"
+    }
+}
